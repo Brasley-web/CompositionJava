@@ -31,4 +31,16 @@ public class OrderItem {
     price = quantity * product.getPrice();
     return price;
   }
+
+  public String toString() {
+    return (
+      product.getName() +
+      ", $" +
+      product.getPrice() +
+      ", Quantity: " +
+      quantity +
+      ", Subtotal: $" +
+      subTotal()
+    );
+  }
 }
